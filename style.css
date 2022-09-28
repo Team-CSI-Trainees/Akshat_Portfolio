@@ -1,8 +1,12 @@
 body{
     padding: 0%;
     margin: 0%;
-  background-image:url("download.png");
+    background-image:linear-gradient(rgb(101, 21, 207),#6b4c57);
     
+}
+.whole{
+    background-image:linear-gradient(rgb(101, 21, 207),#6b4c57);
+    margin-bottom: 0px;
 }
 nav {
     padding: 0%;
@@ -33,7 +37,7 @@ nav ul li{
   position:relative;
   width: 400px;
   height: 300px;
-  margin: 240px auto;
+  margin: 100px auto;
   background-image: linear-gradient(rgb(255, 255, 255),#9f2a53);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 border-radius: 10px;
@@ -100,6 +104,39 @@ color: #fff;}
     padding: 20%;
     box-sizing: border-box;
 }
+.container1{
+    position:relative;
+  width: 1200px;
+  height: 300px;
+  margin: 100px auto;
+  background-image: linear-gradient(rgb(255, 255, 255),#9f2a53);
+  border-radius: 5px;
+}
+.container1 .pic{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #fff;
+    float:left ;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;}
+    .container1 .pic h1{
+        text-align: center;
+        padding: 0px;
+    }
+    .skills{
+        background-image: linear-gradient(rgb(219, 27, 40),rgb(59, 171, 40));
+    }
+    .skills .container2{
+        position:relative;
+        width: 400px;
+        height: 300px;
+        margin: 100px auto;
+        background-image: linear-gradient(rgb(255, 255, 255),#9f2a53);
+      border-radius: 10px;
+    }
 .footer-content{
     padding: 4rem;
     color: #fff;
