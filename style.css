@@ -11,21 +11,15 @@ margin: 0%;}}
 .whole{
     background-image:linear-gradient(45 deg,rgb(101, 21, 207),#6b4c57,rgb(234, 35, 194),rgb(31, 234, 207)),#101094;
     margin-bottom: 0px;
-    background-size: cover;
-    animation: bg 5s infinite ;
+    background-size: cover;    
 }
-@keyframes bg {
-    0% {
-        background-position: left;
-    }
-    100% { background-position: right;
-    }
-}
+
 nav {
     padding: 0%;
     margin: 0%;
     border: 0px;
 width: 100%;
+height:40px ;
 }
 nav ul{
     display: flex;
@@ -38,14 +32,27 @@ nav ul{
     color:white;
 }
 @media (max-width:600px)  {
-   nav ul{ font-size : 8px;}
-
+   nav ul{ font-size : 8px;}    
+}
+.nav-links ul li::after{
+    text-decoration: underline;
+    content:'';
+    width:0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 1s;
+    font-family: fantasy;
     
-    
+}
+.nav-links ul li:hover::after{
+    width: 100%;
 }
 nav ul li{
     padding: 5px;
     cursor: pointer;
+    font-size: larger;
+
 }
 nav ul li a{color: #fff;
 }
@@ -75,7 +82,7 @@ border-radius: 10px;
     position: relative;
     width: calc(500px - 30px);
     height: calc(400px - 30px);
-    background: #ff0;
+    background-image: url(bg2.jpg);
     float:left ;
     margin: 15px;
     box-sizing: border-box;
@@ -96,7 +103,7 @@ border-radius: 10px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #f00;
+    background: rgb(234, 67, 6);
     transition:  0.5s;
      z-index:1;
 }
@@ -193,7 +200,8 @@ color: #fff;}
     }
     @media (max-width: 600px){
         .bada{background-size: cover;
-            height: 500px;
+            height: 800px;
+            width: 600px;
         }}
     .bplate{
         width:100%;
@@ -218,22 +226,22 @@ color: #fff;}
         }}
     .container2 .skills{
         padding: 20px;
-        width:36%;
+        width: 37%;
         display: flex;
         background: #fff;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         list-style: none;
         padding: 0%;
         border-radius: 20px;
-        margin: 0px 150px 0px 550px;
+        margin: 60px 150px 0px 550px;
     }
     @media (max-width: 600px){   
          .container2 .skills{
             padding: 12px;
             border-radius: 10px;
-            margin: 0px 100px 0px 250px;
+            margin: 0px 90px 0px 100px;
             width: 40%;
-            height: 120%;
+            /* height: 200%; */
          }}
 
 
@@ -241,6 +249,7 @@ color: #fff;}
         width: 100%;
         height: 200px;
         background: #000;
+        color: #000;
     }
     @media (max-width: 600px){   
         .container2 .p1{width: 50%;
@@ -303,12 +312,40 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
     height: 20px;
     float: left;
     background: linear-gradient(100deg,rgba(200,120,80,1.0)0%,rgba(250,103,103,1)100%);
+    /* animation-name: barr;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+} */
+
+
 }
 .html{
     width: 85%;
-animation: html 2s;
+animation-name:hbar;
+animation-duration: 4s;
+animation-iteration-count: 1;
+animation-timing-function: ease-in-out;
+animation-delay: 2s;
 
 }
+@keyframes hbar{
+    0% {
+        width: 0px;
+        color:  #ff7f00;
+    }
+    25%{
+        width: 100px;
+        color:#8f5215
+    }
+50%{
+    width: 200px;
+    background-color:#187d1d;
+}
+75%{
+    width: 300px;
+    color: #054208;
+}}
+
 @media (max-width: 600px){   
 .skills pre{ margin-bottom: 2px;
 margin-top: 2px;
@@ -316,17 +353,83 @@ height: 100%;
 }}
 .css{
     width: 75%;
-    animation: css 3s;
+    animation-name:hbar;
+animation-duration: 4s;
+animation-iteration-count: 1;
+animation-timing-function: ease-in-out;
+animation-delay: 2s;
+
 
 }
+@keyframes hbar{
+    0% {
+        width: 0px;
+        color:  #ff7f00;
+    }
+    25%{
+        width: 100px;
+        color:#8f5215
+    }
+50%{
+    width: 200px;
+    background-color:#187d1d;
+}
+75%{
+    width: 300px;
+    color: #054208;
+}}
 .C{
     width: 40%;
-    animation: C 4s;
+    animation-name:hbar;
+animation-duration: 4s;
+animation-iteration-count: 1;
+animation-timing-function: ease-in-out;
+animation-delay: 2s;
+
 }
+@keyframes hbar{
+    0% {
+        width: 0px;
+        color:  #ff7f00;
+    }
+    25%{
+        width: 100px;
+        color:#8f5215
+    }
+50%{
+    width: 200px;
+    background-color:#187d1d;
+}
+75%{
+    width: 300px;
+    color: #054208;
+}}
 .js{
     width: 5%;
-    animation: html 5s;
+    animation-name:hbar;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    
 }
+@keyframes hbar{
+    0% {
+        width: 0px;
+        color:  #ff7f00;
+    }
+    25%{
+        width: 100px;
+        color:#8f5215
+    }
+50%{
+    width: 200px;
+    background-color:#187d1d;
+}
+75%{
+    width: 300px;
+    color: #054208;
+}}
 .contact{ display: flex;
     width: 100%;
     height: 1200px;
@@ -449,6 +552,10 @@ cursor: pointer;}
 
 .media{
     text-align: center;
+    cursor: pointer;
+}
+.media a{
+    cursor: pointer;
 }
 .plate{
 
@@ -465,12 +572,13 @@ footer{display: flex;
     height: 300px;
 background: #000;    
 }
-/* @media (max-width: 600px){ 
+@media (max-width: 600px){ 
 footer{
 width: 100%;
-}} */
+}}
 footer .btn{
     margin-top: 70px;
+    font-family: ;
     margin-left: 60px;
     border-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -478,8 +586,9 @@ footer .btn{
     background: #fff;
     height: 40px;
     width:50px;
-    overflow: hidden;
-    transition: all 0.7s ease-in-out;}
+    overflow: hidden; 
+    transition: all 0.7s ease-in-out;
+cursor: pointer;}
 @media (max-width: 600px){ 
 
  footer .btn{
@@ -492,6 +601,9 @@ footer .btn span{
     margin-left: 10px;
 
 }
+@media (max-width: 600px){ 
+    footer .btn span{ margin-left: 1px;
+    }}
 footer .btn .ico{
     display: inline-block;
     height: 60px;
@@ -501,17 +613,26 @@ footer .btn .ico{
 
     transition: all 0.7s ease-in-out;
 }@media (max-width: 600px){ 
-
-footer .btn .ico{height: 2px;
-width: 2px;}}
+footer .btn .ico{ display:block;
+width: 2px;
+height: 1px;}}
 footer .btn .ico i{
     color: #fff;
 }
+@media(max-width:600px)
+{
+    footer .btn .ico { width: 1px;
+        height: 1px;
 
+    }
+}
 footer .btn .ico i{
     font-size: 20px;
     line-height: 40px;
 }
+@media(max-width:600px)
+{.footer .btn .ico i{
+    }}
 .btn:hover{
     width: 200px;
     padding-bottom: 5px;
@@ -545,6 +666,10 @@ footer .btn .ico i{
 .div1{
     margin-left: 100px;
 }
+@media (max-width:600px){
+    .div1{margin-left: -200px;
+
+}}
 .div1 pre{
     color: #fff;
     text-align: center;
@@ -555,10 +680,8 @@ footer .btn .ico i{
     .div2{
         margin-left: 2px;
         width: 30%;
-    } 
-
+    }
 }
 .div2 pre{
     color: #fff;
-
 }
